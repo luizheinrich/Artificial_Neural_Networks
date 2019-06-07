@@ -1,0 +1,26 @@
+================================================================
+=                        CLASSE 1 -> 59                        =
+================================================================
+Treino     -> 39	net.divideParam.trainInd  = 1:1:39;
+Validação  -> 10	net.divideParam.valInd    = 40:1:49;
+Teste      -> 10	net.divideParam.testInd   = 50:1:59;
+
+
+
+
+================================================================
+=                        CLASSE 2 -> 71                        =
+================================================================
+Treino     -> 51	net.divideParam.trainInd  = 60:1:110;
+Validação  -> 10	net.divideParam.valInd    = 111:1:120;
+Teste      -> 10	net.divideParam.testInd   = 121:1:130;
+
+
+
+
+================================================================
+=                        CLASSE 3 -> 48                        =
+================================================================
+Treino     -> 28	net.divideParam.trainInd  = 131:1:158;
+Validação  -> 10	net.divideParam.valInd    = 159:1:168;
+Teste      -> 10	net.divideParam.testInd   = 169:1:178;
