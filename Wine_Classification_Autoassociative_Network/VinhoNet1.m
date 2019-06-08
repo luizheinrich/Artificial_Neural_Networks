@@ -9,7 +9,7 @@
 % REDE DA CLASSE 1
 
 % Carrega o arquivo .txt que contém o banco de dados
-file = 'VinhoDataSetNormalizadoPonto.txt';
+file = 'VinhoDataSet.txt';
 database=load(file);
 
 DATA = transpose(database);

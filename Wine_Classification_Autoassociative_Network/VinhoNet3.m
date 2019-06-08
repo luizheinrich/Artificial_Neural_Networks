@@ -86,7 +86,6 @@ TesteSaida   = SaidaB(:,39:48)';
 
 
 
-
 % Vetor de Entrada para o Vetor de Teste
 TesteEntradaT = [Entrada(:,50:59)';
                 Entrada(:,121:130)';

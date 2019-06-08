@@ -37,22 +37,60 @@ Entrada = [X1;X2;X3;X4;X5;X6;X7;X8;X9;X10;X11;X12;X13];
 % SÁIDA:
 Saida = Y1;
 
-% Vetor de Teste ----------------------------------------------------------
+% Vetor de Teste Geral ----------------------------------------------------
 % Vetor de Entrada para o Vetor de Teste
-TesteEntrada = [Entrada(:,50:59)';
-                Entrada(:,121:130)';
-                Entrada(:,169:178)'];
+TesteEntradaGeral = [Entrada(:,50:59)';
+                     Entrada(:,121:130)';
+                     Entrada(:,169:178)'];
             
             % Vetor de Teste - Entrada
-            EntradaVetorTesteGeral = transpose(TesteEntrada);
+            EntradaVetorTesteGeral = transpose(TesteEntradaGeral);
             
 % Vetor de Saída para o Vetor de Teste
-TesteSaida   = [Saida(:,50:59)';
-                Saida(:,121:130)';
-                Saida(:,169:178)'];
+TesteSaidaGeral   = [Saida(:,50:59)';
+                     Saida(:,121:130)';
+                     Saida(:,169:178)'];
             
             % Vetor de Teste - Saída
-            SaidaVetorTesteGeral = transpose(TesteSaida);
+            SaidaVetorTesteGeral = transpose(TesteSaidaGeral);
+% -------------------------------------------------------------------------
+
+% Definir a Classe [1 2 3]
+Rede = 1;
+
+for TesteClasse = Rede
+
+    if TesteClasse == 1
+        
+        ClasseE = Entrada(:,50:59)';
+        ClasseS = Saida(:,50:59)';
+        
+    elseif TesteClasse == 2
+        
+        ClasseE = Entrada(:,121:130)';
+        ClasseS = Saida(:,121:130)';
+        
+    elseif TesteClasse == 3
+        
+        ClasseE = Entrada(:,169:178)';
+        ClasseS = Saida(:,169:178)';
+        
+    end
+    
+end
+    
+% Vetor de Teste Classe ---------------------------------------------------
+% Vetor de Entrada para o Vetor de Teste
+TesteClasseEntrada = ClasseE;
+            
+            % Vetor de Teste - Entrada
+            EntradaVetorTesteClasse = transpose(TesteClasseEntrada);
+            
+% Vetor de Saída para o Vetor de Teste
+TesteClasseSaida   = ClasseS;
+            
+            % Vetor de Teste - Saída
+            SaidaVetorTesteClasse = transpose(TesteClasseSaida);
 % -------------------------------------------------------------------------
 
 
@@ -101,14 +139,15 @@ net.divideParam.testInd   = [50:1:59, 121:1:130, 169:1:178];
 
 % VETOR DE TESTE ==========================================================
 % Saída após o treinamento - Vetor de teste
-VT = sim(net,EntradaVetorTesteGeral);
+VTeste = sim(net,EntradaVetorTesteClasse);  % Teste Local (classe escolhida)
+VT = sim(net,EntradaVetorTesteGeral);    % Teste Geral (das 3 classes)
 
 
 
 % Plotagem após o Trenamento - Vetor de teste
 plot(VT);
 hold
-plot(TesteSaida2);
+plot(SaidaVetorTesteGeral);
 
 
 % DESEMPENHO DA REDE - VETOR DE TESTE TOTAL ===============================
@@ -126,6 +165,25 @@ MSE = mean(Quadrado);
 % Media do MSE
 %perf = mse(net,TesteEntrada2,VT);
 media = mean(MSE);
+
+
+
+% DESEMPENHO DA REDE - VETOR DE TESTE LOCAL (REDE 2) ======================
+% ERRO DA REDE 2 EM RELAÇÃO AO VETOR DE TESTE DA REDE 2 ===================
+
+% Erro - (Saída - Entrada)
+ErroTesteClasse  =  VTeste-SaidaVetorTesteClasse;
+
+% Quadrado do Erro
+QuadradoTesteClasse = ErroTesteClasse.^2;
+
+% ERRO MÉDIO QUADRÁTICO
+MSETesteClasse = mean(QuadradoTesteClasse);
+
+% Media do MSE
+%perf = mse(net,TesteEntrada2,VT);
+mediaTesteClasse = mean(MSETesteClasse);
+
 
 
 
