@@ -70,36 +70,87 @@ Entrada = [X1;X2;X3;X4;X5;X6;X7;X8;X9;X10;X11;X12;X13];
 % SÁIDA:
 Saida = Y1;
 
-% Vetor de Teste ----------------------------------------------------------
+
+% Vetor de Teste Geral ----------------------------------------------------
 % Vetor de Entrada para o Vetor de Teste
-TesteEntrada = EntradaA(:,39:48)';
+TesteEntradaGeral = [Entrada(:,50:59)';
+                     Entrada(:,121:130)';
+                     Entrada(:,169:178)'];
             
             % Vetor de Teste - Entrada
-            TesteEntrada2 = transpose(TesteEntrada);
+            EntradaVetorTesteGeral = transpose(TesteEntradaGeral);
             
 % Vetor de Saída para o Vetor de Teste
-TesteSaida   = SaidaB(:,39:48)';
+TesteSaidaGeral   = [Saida(:,50:59)';
+                     Saida(:,121:130)';
+                     Saida(:,169:178)'];
             
             % Vetor de Teste - Saída
-            TesteSaida2 = transpose(TesteSaida);
+            SaidaVetorTesteGeral = transpose(TesteSaidaGeral);
 % -------------------------------------------------------------------------
 
+% Definir [1]
+Rede = 1;
+
+for TesteClasse = Rede
+
+    if TesteClasse == 1
+        
+        ClasseE1 = Entrada(:,50:59)';
+        ClasseS1 = Saida(:,50:59)';
+        
+        
+        ClasseE2 = Entrada(:,121:130)';
+        ClasseS2 = Saida(:,121:130)';
+        
+        
+        ClasseE3 = Entrada(:,169:178)';
+        ClasseS3 = Saida(:,169:178)';
+        
+    end
+    
+end
 
 
+% Vetor de Teste Classe 1 -------------------------------------------------
 % Vetor de Entrada para o Vetor de Teste
-TesteEntradaT = [Entrada(:,50:59)';
-                Entrada(:,121:130)';
-                EntradaA(:,39:48)'];
+TesteClasseEntrada1 = ClasseE1;
             
             % Vetor de Teste - Entrada
-            TesteEntradaGeral = transpose(TesteEntradaT);
-
-
-% ========================================================
-
-
-
-
+            EntradaVetorTesteClasse1 = transpose(TesteClasseEntrada1);
+            
+% Vetor de Saída para o Vetor de Teste
+TesteClasseSaida1   = ClasseS1;
+            
+            % Vetor de Teste - Saída
+            SaidaVetorTesteClasse1 = transpose(TesteClasseSaida1);
+% -------------------------------------------------------------------------
+% Vetor de Teste Classe 2 -------------------------------------------------
+% Vetor de Entrada para o Vetor de Teste
+TesteClasseEntrada2 = ClasseE2;
+            
+            % Vetor de Teste - Entrada
+            EntradaVetorTesteClasse2 = transpose(TesteClasseEntrada2);
+            
+% Vetor de Saída para o Vetor de Teste
+TesteClasseSaida2   = ClasseS2;
+            
+            % Vetor de Teste - Saída
+            SaidaVetorTesteClasse2 = transpose(TesteClasseSaida2);
+% -------------------------------------------------------------------------
+% Vetor de Teste Classe 3 -------------------------------------------------
+% Vetor de Entrada para o Vetor de Teste
+TesteClasseEntrada3 = ClasseE3;
+            
+            % Vetor de Teste - Entrada
+            EntradaVetorTesteClasse3 = transpose(TesteClasseEntrada3);
+            
+% Vetor de Saída para o Vetor de Teste
+TesteClasseSaida3   = ClasseS3;
+            
+            % Vetor de Teste - Saída
+            SaidaVetorTesteClasse3 = transpose(TesteClasseSaida3);
+% -------------------------------------------------------------------------
 
 
 % Criação rede feed-forward backpropagation
@@ -145,8 +196,11 @@ net.divideParam.testInd   = 39:1:48;
 
 % VETOR DE TESTE ==========================================================
 % Saída após o treinamento - Vetor de teste
-VTeste03 = sim(net,TesteEntrada2);  % Teste Local (da classe 3)
-VT = sim(net,TesteEntradaGeral);    % Teste Geral (das 3 classes)
+VTeste1 = sim(net,EntradaVetorTesteClasse1);  % Teste Local Classe 1
+VTeste2 = sim(net,EntradaVetorTesteClasse2);  % Teste Local Classe 1
+VTeste3 = sim(net,EntradaVetorTesteClasse3);  % Teste Local Classe 1
+
+VT = sim(net,EntradaVetorTesteGeral);    % Teste Geral (das 3 classes)
 
 
 
@@ -157,16 +211,16 @@ VT = sim(net,TesteEntradaGeral);    % Teste Geral (das 3 classes)
 
 
 % DESEMPENHO DA REDE - VETOR DE TESTE TOTAL ===============================
-% ERRO DA REDE 2 EM RELAÇÃO AO VETOR DE TESTE TOTAL =======================
+% ERRO DA REDE 1 EM RELAÇÃO AO VETOR DE TESTE TOTAL =======================
 
 % Erro - (Saída - Entrada)
-Erro03  =  VT-TesteEntradaGeral;
+Erro  =  VT-EntradaVetorTesteGeral;
 
 % Quadrado do Erro
-Quadrado03 = Erro03.^2;
+Quadrado = Erro.^2;
 
 % ERRO MÉDIO QUADRÁTICO
-MSE = mean(Quadrado03);
+MSE = mean(Quadrado);
 
 % Media do MSE
 %perf = mse(net,TesteEntrada2,VT);
@@ -174,23 +228,54 @@ media = mean(MSE);
 
 
 
-% DESEMPENHO DA REDE - VETOR DE TESTE LOCAL (REDE 2) ======================
-% ERRO DA REDE 2 EM RELAÇÃO AO VETOR DE TESTE DA REDE 2 ===================
+% DESEMPENHO DA REDE - VETOR DE TESTE LOCAL (REDE 1) ======================
 
 % Erro - (Saída - Entrada)
-ErroTeste03  =  VTeste03-TesteEntrada2;
+ErroTesteClasse1  =  VTeste1-EntradaVetorTesteClasse1;
 
 % Quadrado do Erro
-QuadradoTeste03 = ErroTeste03.^2;
+QuadradoTesteClasse1 = ErroTesteClasse1.^2;
 
 % ERRO MÉDIO QUADRÁTICO
-MSETeste03 = mean(QuadradoTeste03);
+MSETesteClasse1 = mean(QuadradoTesteClasse1);
 
 % Media do MSE
 %perf = mse(net,TesteEntrada2,VT);
-mediaTeste03 = mean(MSETeste03);
+mediaTesteClasse1 = mean(MSETesteClasse1);
 
+% =========================================================================
+% DESEMPENHO DA REDE - VETOR DE TESTE LOCAL (REDE 2) ======================
 
+% Erro - (Saída - Entrada)
+ErroTesteClasse2  =  VTeste2-EntradaVetorTesteClasse2;
+
+% Quadrado do Erro
+QuadradoTesteClasse2 = ErroTesteClasse2.^2;
+
+% ERRO MÉDIO QUADRÁTICO
+MSETesteClasse2 = mean(QuadradoTesteClasse2);
+
+% Media do MSE
+%perf = mse(net,TesteEntrada2,VT);
+mediaTesteClasse2 = mean(MSETesteClasse2);
+
+% =========================================================================
+% DESEMPENHO DA REDE - VETOR DE TESTE LOCAL (REDE 3) ======================
+
+% Erro - (Saída - Entrada)
+ErroTesteClasse3  =  VTeste3-EntradaVetorTesteClasse3;
+
+% Quadrado do Erro
+QuadradoTesteClasse3 = ErroTesteClasse3.^2;
+
+% ERRO MÉDIO QUADRÁTICO
+MSETesteClasse3 = mean(QuadradoTesteClasse3);
+
+% Media do MSE
+%perf = mse(net,TesteEntrada2,VT);
+mediaTesteClasse3 = mean(MSETesteClasse3);
+
+% =========================================================================
 
 
 
