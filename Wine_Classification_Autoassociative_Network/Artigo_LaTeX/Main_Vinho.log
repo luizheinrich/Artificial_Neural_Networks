@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.16)  12 JUN 2019 23:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.16)  13 JUN 2019 04:35
 entering extended mode
 **./Main_Vinho.tex
 (Main_Vinho.tex
@@ -255,76 +255,138 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks18
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\adjustbox.sty"
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks19
+\XKV@tempa@toks=\toks20
+)
+\XKV@depth=\count100
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\adjcalc.sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\trimclip.sty"
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/collectbox\collectbox.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box29
+)
+\tc@llx=\dimen137
+\tc@lly=\dimen138
+\tc@urx=\dimen139
+\tc@ury=\dimen140
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\tc-pdftex.def"
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen141
+\adjbox@Height=\dimen142
+\adjbox@Depth=\dimen143
+\adjbox@Totalheight=\dimen144
+\adjbox@pwidth=\dimen145
+\adjbox@pheight=\dimen146
+\adjbox@pdepth=\dimen147
+\adjbox@ptotalheight=\dimen148
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/ifoddpage\ifoddpage.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count101
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/varwidth\varwidth.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box30
+\sift@deathcycles=\count102
+\@vwid@loff=\dimen149
+\@vwid@roff=\dimen150
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count103
+\float@exts=\toks21
+\float@box=\box31
+\@float@everytoks=\toks22
+\@floatcapt=\box32
+)
 (00-Setup/01-Setup.tex) (Main_Vinho.aux)
 \openout1 = `Main_Vinho.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <5.01874> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <5.01874> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <7.02625> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <7.02625> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <8.03> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <8.03> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9.03374> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <9.03374> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9.53561> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <9.53561> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <11.04124> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <11.04124> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12.045> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <12.045> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.06374> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <17.06374> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.075> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <20.075> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.09> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.09> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 29.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 31.
 
 -- Lines per column: 65 (approximate, difference = 6.77623pt).
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
-\scratchdimen=\dimen137
-\scratchbox=\box29
-\nofMPsegments=\count101
-\nofMParguments=\count102
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count103
-\MPscratchDim=\dimen138
-\MPnumerator=\count104
-\makeMPintoPDFobject=\count105
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count104
+\scratchdimen=\dimen151
+\scratchbox=\box33
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen152
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks24
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -362,7 +424,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box30
+\AtBeginShipoutBox=\box34
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -447,7 +509,11 @@ Underfull \hbox (badness 1571) in paragraph at lines 7--8
 []\T1/ppl/m/n/9.53561 As Re-des Neu-rais Ar-ti-fi-ci-ais (RNA) são mo-de-los
  []
 
-) (02-Elementos-textuais/02-Desenvolvimento.tex
+) (02-Elementos-textuais/02-Desenvolvimento.tex [1{C:/Users/luizh/AppData/Local
+/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
 Package epstopdf Info: Source file: <04-Figuras/Arquitetura.eps>
 (epstopdf)                    date: 2019-06-12 22:39:56
 (epstopdf)                    size: 384498 bytes
@@ -457,25 +523,27 @@ f>
 (epstopdf)                    size: 22191 bytes
 (epstopdf)             Command: <epstopdf --outfile=04-Figuras/Arquitetura-eps-
 converted-to.pdf 04-Figuras/Arquitetura.eps>
-(epstopdf)             \includegraphics on input line 13.
+(epstopdf)             \includegraphics on input line 12.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./04-Figuras/Arquitetura-eps-converted-to.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<04-Figuras/Arquitetura-eps-converted-to.pdf, id=6, 244.915pt x 171.64125pt>
+<04-Figuras/Arquitetura-eps-converted-to.pdf, id=16, 244.915pt x 171.64125pt>
 File: 04-Figuras/Arquitetura-eps-converted-to.pdf Graphic file (type pdf)
 <use 04-Figuras/Arquitetura-eps-converted-to.pdf>
 Package pdftex.def Info: 04-Figuras/Arquitetura-eps-converted-to.pdf  used on i
-nput line 13.
+nput line 12.
 (pdftex.def)             Requested size: 244.91438pt x 171.64081pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[1{C:/Users/luizh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-
-
-]
+(05-Tabelas/MLP_MSE.tex
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8.03> on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.62097> on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <4.015> on input line 20.
+)
 Package epstopdf Info: Source file: <04-Figuras/Arquitetura-MPL.eps>
 (epstopdf)                    date: 2019-06-12 21:16:43
 (epstopdf)                    size: 749938 bytes
@@ -485,7 +553,7 @@ o.pdf>
 (epstopdf)                    size: 97762 bytes
 (epstopdf)             Command: <epstopdf --outfile=04-Figuras/Arquitetura-MPL-
 eps-converted-to.pdf 04-Figuras/Arquitetura-MPL.eps>
-(epstopdf)             \includegraphics on input line 59.
+(epstopdf)             \includegraphics on input line 73.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -496,14 +564,14 @@ f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: 04-Figuras/Arquitetura-MPL-eps-converted-to.pdf Graphic file (type pdf)
 <use 04-Figuras/Arquitetura-MPL-eps-converted-to.pdf>
 Package pdftex.def Info: 04-Figuras/Arquitetura-MPL-eps-converted-to.pdf  used 
-on input line 59.
+on input line 73.
 (pdftex.def)             Requested size: 244.91438pt x 285.0643pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 4995) has occurred while \output is active []
 
-[2 <./04-Figuras/Arquitetura-eps-converted-to.pdf>]
-Underfull \hbox (badness 1902) in paragraph at lines 85--85
- \T1/phv/b/sc/11.04124 4 De-sen-vol-vi-mento da Rede Com-pe-ti-tiva
+ [2 <./04-Figuras/Arquitetura-eps-converted-to.pdf>]
+Underfull \hbox (badness 1902) in paragraph at lines 94--94
+ \T1/phv/b/sc/11.04124 5 De-sen-vol-vi-mento da Rede Com-pe-ti-tiva
  []
 
 Package epstopdf Info: Source file: <04-Figuras/Arquitetura-AutoAssociativa.eps
@@ -516,7 +584,7 @@ Package epstopdf Info: Source file: <04-Figuras/Arquitetura-AutoAssociativa.eps
 (epstopdf)                    size: 31076 bytes
 (epstopdf)             Command: <epstopdf --outfile=04-Figuras/Arquitetura-Auto
 Associativa-eps-converted-to.pdf 04-Figuras/Arquitetura-AutoAssociativa.eps>
-(epstopdf)             \includegraphics on input line 96.
+(epstopdf)             \includegraphics on input line 106.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -529,13 +597,37 @@ File: 04-Figuras/Arquitetura-AutoAssociativa-eps-converted-to.pdf Graphic file
 (type pdf)
 <use 04-Figuras/Arquitetura-AutoAssociativa-eps-converted-to.pdf>
 Package pdftex.def Info: 04-Figuras/Arquitetura-AutoAssociativa-eps-converted-t
-o.pdf  used on input line 96.
+o.pdf  used on input line 106.
 (pdftex.def)             Requested size: 244.91438pt x 285.0643pt.
-) (02-Elementos-textuais/03-Resultados.tex [3 <./04-Figuras/Arquitetura-MPL-eps
--converted-to.pdf> <./04-Figuras/Arquitetura-AutoAssociativa-eps-converted-to.p
-df>]
+) (02-Elementos-textuais/03-Resultados.tex
+Underfull \vbox (badness 4279) has occurred while \output is active []
+
+Package epstopdf Info: Source file: <04-Figuras/SAIDA_MLP.eps>
+(epstopdf)                    date: 2019-06-13 00:17:43
+(epstopdf)                    size: 400514 bytes
+(epstopdf)             Output file: <04-Figuras/SAIDA_MLP-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2019-06-13 00:19:25
+(epstopdf)                    size: 15554 bytes
+(epstopdf)             Command: <epstopdf --outfile=04-Figuras/SAIDA_MLP-eps-co
+nverted-to.pdf 04-Figuras/SAIDA_MLP.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./04-Figuras/SAIDA_MLP-eps-converted-to.pdf): PD
+F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<04-Figuras/SAIDA_MLP-eps-converted-to.pdf, id=32, 244.915pt x 244.915pt>
+File: 04-Figuras/SAIDA_MLP-eps-converted-to.pdf Graphic file (type pdf)
+<use 04-Figuras/SAIDA_MLP-eps-converted-to.pdf>
+Package pdftex.def Info: 04-Figuras/SAIDA_MLP-eps-converted-to.pdf  used on inp
+ut line 15.
+(pdftex.def)             Requested size: 244.91438pt x 244.91438pt.
+[3 <./04-Figuras/Arquitetura-MPL-eps-converted-to.pdf> <./04-Figuras/Arquitetur
+a-AutoAssociativa-eps-converted-to.pdf> <./04-Figuras/SAIDA_MLP-eps-converted-t
+o.pdf>]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9.53561> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 19.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 31.
 Package epstopdf Info: Source file: <04-Figuras/MSE_DesempenhoNet1.eps>
 (epstopdf)                    date: 2019-06-12 20:05:56
 (epstopdf)                    size: 392282 bytes
@@ -545,20 +637,20 @@ d-to.pdf>
 (epstopdf)                    size: 15896 bytes
 (epstopdf)             Command: <epstopdf --outfile=04-Figuras/MSE_DesempenhoNe
 t1-eps-converted-to.pdf 04-Figuras/MSE_DesempenhoNet1.eps>
-(epstopdf)             \includegraphics on input line 26.
+(epstopdf)             \includegraphics on input line 38.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./04-Figuras/MSE_DesempenhoNet1-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<04-Figuras/MSE_DesempenhoNet1-eps-converted-to.pdf, id=66, 244.915pt x 244.915
+<04-Figuras/MSE_DesempenhoNet1-eps-converted-to.pdf, id=75, 244.915pt x 244.915
 pt>
 File: 04-Figuras/MSE_DesempenhoNet1-eps-converted-to.pdf Graphic file (type pdf
 )
 <use 04-Figuras/MSE_DesempenhoNet1-eps-converted-to.pdf>
 Package pdftex.def Info: 04-Figuras/MSE_DesempenhoNet1-eps-converted-to.pdf  us
-ed on input line 26.
+ed on input line 38.
 (pdftex.def)             Requested size: 244.91438pt x 244.91438pt.
 Package epstopdf Info: Source file: <04-Figuras/MSE_DesempenhoNet2.eps>
 (epstopdf)                    date: 2019-06-12 20:31:02
@@ -569,23 +661,23 @@ d-to.pdf>
 (epstopdf)                    size: 14730 bytes
 (epstopdf)             Command: <epstopdf --outfile=04-Figuras/MSE_DesempenhoNe
 t2-eps-converted-to.pdf 04-Figuras/MSE_DesempenhoNet2.eps>
-(epstopdf)             \includegraphics on input line 41.
+(epstopdf)             \includegraphics on input line 55.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./04-Figuras/MSE_DesempenhoNet2-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<04-Figuras/MSE_DesempenhoNet2-eps-converted-to.pdf, id=67, 244.915pt x 244.915
+<04-Figuras/MSE_DesempenhoNet2-eps-converted-to.pdf, id=76, 244.915pt x 244.915
 pt>
 File: 04-Figuras/MSE_DesempenhoNet2-eps-converted-to.pdf Graphic file (type pdf
 )
 <use 04-Figuras/MSE_DesempenhoNet2-eps-converted-to.pdf>
 Package pdftex.def Info: 04-Figuras/MSE_DesempenhoNet2-eps-converted-to.pdf  us
-ed on input line 41.
+ed on input line 55.
 (pdftex.def)             Requested size: 244.91438pt x 244.91438pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package epstopdf Info: Source file: <04-Figuras/MSE_DesempenhoNet3.eps>
 (epstopdf)                    date: 2019-06-12 20:31:02
@@ -596,51 +688,53 @@ d-to.pdf>
 (epstopdf)                    size: 14318 bytes
 (epstopdf)             Command: <epstopdf --outfile=04-Figuras/MSE_DesempenhoNe
 t3-eps-converted-to.pdf 04-Figuras/MSE_DesempenhoNet3.eps>
-(epstopdf)             \includegraphics on input line 56.
+(epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./04-Figuras/MSE_DesempenhoNet3-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<04-Figuras/MSE_DesempenhoNet3-eps-converted-to.pdf, id=68, 244.915pt x 244.915
+<04-Figuras/MSE_DesempenhoNet3-eps-converted-to.pdf, id=77, 244.915pt x 244.915
 pt>
 File: 04-Figuras/MSE_DesempenhoNet3-eps-converted-to.pdf Graphic file (type pdf
 )
 <use 04-Figuras/MSE_DesempenhoNet3-eps-converted-to.pdf>
 Package pdftex.def Info: 04-Figuras/MSE_DesempenhoNet3-eps-converted-to.pdf  us
-ed on input line 56.
+ed on input line 70.
 (pdftex.def)             Requested size: 244.91438pt x 244.91438pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4 <./04-Figuras/MSE_DesempenhoNet1-eps-converted-to.pdf>])
-(02-Elementos-textuais/04-Consideracoes-finais.tex)
+[4 <./04-Figuras/MSE_DesempenhoNet1-eps-converted-to.pdf> <./04-Figuras/MSE_Des
+empenhoNet2-eps-converted-to.pdf> <./04-Figuras/MSE_DesempenhoNet3-eps-converte
+d-to.pdf>]) (02-Elementos-textuais/04-Consideracoes-finais.tex)
 (03-Elementos-pos-textuais/01-Agradecimentos.tex)
 (03-Elementos-pos-textuais/02-Anexo.tex)
 (03-Elementos-pos-textuais/03-Referencias.tex
 No file Main_Vinho.bbl.
-) [5 <./04-Figuras/MSE_DesempenhoNet2-eps-converted-to.pdf> <./04-Figuras/MSE_D
-esempenhoNet3-eps-converted-to.pdf>] (Main_Vinho.aux) ) 
+) [5
+
+] (Main_Vinho.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4284 strings out of 492942
- 71253 string characters out of 3135396
- 150366 words of memory out of 3000000
- 7929 multiletter control sequences out of 15000+200000
- 91455 words of font info for 130 fonts, out of 3000000 for 9000
+ 5395 strings out of 492942
+ 90062 string characters out of 3135396
+ 167747 words of memory out of 3000000
+ 8983 multiletter control sequences out of 15000+200000
+ 92130 words of font info for 131 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,25p,956b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX
- 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
-rw/palatino/uplri8a.pfb>
-Output written on Main_Vinho.pdf (5 pages, 286066 bytes).
+ 41i,9n,37p,956b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/
+uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Main_Vinho.pdf (5 pages, 301477 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
+ 132 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

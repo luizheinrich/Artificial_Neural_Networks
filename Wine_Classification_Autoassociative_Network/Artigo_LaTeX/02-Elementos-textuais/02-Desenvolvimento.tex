@@ -1,13 +1,12 @@
-\section{Revisão Bibliográfica}
+\section{Revisão Bibliográfica} \label{revisaobibliografica}
 
 Redes Neurais Artificiais são técnicas computacionais que apresentam um modelo matemático inspirado na estrutura neural de organismos inteligentes e que adquirem conhecimento através da experiência. A arquitetura base de rede neural estudada neste artigo é a Perceptron de Múltiplas Camadas (do inglês, Multilayer Perceptron, ou apenas MLP).
 
 \subsection{Perceptrom de Multiplas Camadas}
 
-Uma rede MLP consiste em pelo menos três camadas: uma camada de entrada, uma camada oculta e uma camada de saída. O MLP utiliza uma técnica de aprendizado supervisionada chamada \textit{backpropagation} para treinamento.
+Uma rede MLP consiste em pelo menos três camadas: uma camada de entrada, uma camada oculta e uma camada de saída. O MLP utiliza uma técnica de aprendizado supervisionada chamada \textit{backpropagation} para o treinamento.
 
-
-\begin{figure}[h!]
+\begin{figure}[H]
 
 \centering % para centralizarmos a figura
 \includegraphics{04-Figuras/Arquitetura}
@@ -18,21 +17,14 @@ Uma rede MLP consiste em pelo menos três camadas: uma camada de entrada, uma ca
 
 \end{figure}
 
-A fig.{label:arquitetura} mostra
-
-In convallis. Fusce suscipit libero eget elit. Praesent vitae arcu tempor neque lacinia pretium. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus.
+A rede é alimentada pela camada de entrada, de maneira que as entradas serão ponderadas por pesos e, logo em seguida, serão somados de submetidos a uma função de ativação (na camada intermediária). Por fim, após este processamento, haverá uma resposta na camada de saída da rede, como ilustra a fig. \ref{figura:arquitetura}.
 
 
-
-Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. Nunc tincidunt ante vitae massa. Duis ante orci, molestie vitae, vehicula venenatis, tincidunt ac, pede. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Etiam commodo dui eget wisi. Donec iaculis gravida nulla. Donec quis nibh at felis congue commodo. Etiam bibendum elit eget erat.
 
 \subsection{Algoritmo Backpropagation}
 
-Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla. Nulla non lectus sed nisl molestie malesuada. Proin in tellus sit amet nibh dignissim sagittis. Vivamus luctus egestas leo. Maecenas sollicitudin. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat.
 
-Maecenas ipsum velit, consectetuer eu, lobortis ut, dictum at, dui. In rutrum. Sed ac dolor sit amet purus malesuada congue. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Suspendisse sagittis ultrices augue. Mauris metus. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam posuere lacus quis dolor. Praesent id justo in neque elementum ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. In convallis. Fusce suscipit libero eget elit. Praesent vitae arcu tempor neque lacinia pretium. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus.
-
-Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere. Nullam lectus justo, vulputate eget, mollis sed, tempor sed, magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam neque. Curabitur ligula sapien, pulvinar a, vestibulum quis, facilisis vel, sapien. Nullam eget nisl. Donec vitae arcu.
+Quando verifica-se a resposta na camada de saída de uma MLP, podemos estimar o grau de acerto da rede. Portanto, há um valor esperado (e conhecido) para a resposta da rede durante a fase de treinamento. Logo, podemos extrair o erro dessa rede. O algoritmo \textit{backpropagation} visa realimentar o erro nas entradas com o objetivo de minimizá-lo ao máximo. Essa característica é chamada de retropropagação do erro.
 
 \subsection{Estrutura Competitiva Auto Associativa}
 
@@ -46,51 +38,69 @@ Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit
 
 Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla. Nulla non lectus sed nisl molestie malesuada. Proin in tellus sit amet nibh dignissim sagittis. Vivamus luctus egestas leo. Maecenas sollicitudin. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat.
 
+
 %=================================================================================================
 %=================================================================================================
 
-\section{Desenvolvimento da Rede MPL}
+\section{Base de Dados} \label{baseDados}
 
-Maecenas ipsum velit, consectetuer eu, lobortis ut, dictum at, dui. In rutrum. Sed ac dolor sit amet purus malesuada congue. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Suspendisse sagittis ultrices augue. Mauris metus. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam posuere lacus quis dolor. Praesent id justo in neque elementum ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. In convallis. Fusce suscipit libero eget elit. Praesent vitae arcu tempor neque lacinia pretium. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus.
+A base de dados tratada neste trabalho é referente a 13 parâmetros (características) de três classes de vinho, onde totaliza 178 instâncias de dados coletados.
 
-\begin{figure}[h!]
+Das 178 instâncias 59 pertencem à classe 1, 71 pertencem à classe 2 e 48 à classe 3.
+
+
+
+%=================================================================================================
+%=================================================================================================
+
+
+\section{Desenvolvimento da Rede MLP} \label{desenvolvimentoMLP}
+
+A rede MLP foi implementada utilizando 13 neurônio na camada de entrada, 5 neurônio na camada intermediária e um neurônio na camada de saída.
+
+A topologia da rede foi escolhida variando-se o número de neurônios na camada intermediária e fazendo um estudo sobre o erro médio quadrático (do inglês, MSE) e o número de erros na classificação.
+
+\input{05-Tabelas/MLP_MSE}							%->	Tabela 01
+
+A tabela \ref{tabela:MLP_MSE} mostra o desempenho de cada topologia de rede MPL. Observa-se que o melhor desempenho foi obtido pela rede com 5 neurônios na camada intermediária, pois apresentou o menor erro médio quadrático e o menor número de erros na classificação.
+
+
+\subsection{Arquitetura MLP}
+
+\begin{figure}[H]
 
 \centering % para centralizarmos a figura
 \includegraphics{04-Figuras/Arquitetura-MPL}
 
-\caption{Arquitetura da rede MPL}
+\caption{Arquitetura da rede MLP}
 
 \label{figura:arquiteturaMPL}
 
 \end{figure}
 
+Após a escolha da topologia de rede MLP, 
 
-\subsection{Ambiente da Aplicação}
-
-Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere. Nullam lectus justo, vulputate eget, mollis sed, tempor sed, magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam neque. Curabitur ligula sapien, pulvinar a, vestibulum quis, facilisis vel, sapien. Nullam eget nisl. Donec vitae arcu.
-
-
-\subsection{Base de Dados}
-
-Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla. Nulla non lectus sed nisl molestie malesuada. Proin in tellus sit amet nibh dignissim sagittis. Vivamus luctus egestas leo. Maecenas sollicitudin. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat.
 
 
 \subsection{Parâmetros de Classificação}
 
-Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere. Nullam lectus justo, vulputate eget, mollis sed, tempor sed, magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam neque. Curabitur ligula sapien, pulvinar a, vestibulum quis, facilisis vel, sapien. Nullam eget nisl. Donec vitae arcu.
+
+
+A resposta da rede MLP foi definida em intervalos de abrangência. De 0,5 a 1,5, consideramos como pertencentes à classe 1. Os valores entre 1,5 a 2,5, são os da classe 2. Para a classe 3, foi definido o intervalo de 2,5 a 3,5.
 
 %=================================================================================================
 %=================================================================================================
 
-\section{Desenvolvimento da Rede Competitiva Auto Associativa}
+\section{Desenvolvimento da Rede Competitiva Auto Associativa} \label{desenvolvimentoAuto}
 
-Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla. Nulla non lectus sed nisl molestie malesuada. Proin in tellus sit amet nibh dignissim sagittis. Vivamus luctus egestas leo. Maecenas sollicitudin. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat.
+A rede competitiva auto associativa é projetada sendo três redes, uma para cada classe, que serão treinadas para se especializarem na classe a qual elas representam. Assim, as três redes formam uma estrutura única de competição.
+
 
 \subsection{Arquitetura}
 
-Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere. Nullam lectus justo, vulputate eget, mollis sed, tempor sed, magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam neque. Curabitur ligula sapien, pulvinar a, vestibulum quis, facilisis vel, sapien. Nullam eget nisl. Donec vitae arcu.
+A rede competitiva auto associativa foi implementada com 13 camadas de entrada e saída, sendo os seus argumentos os mesmos, e com 5 neurônios na camada intermediária, como mostra a fig. \ref{figura:arquiteturaAuto}.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 
 \centering % para centralizarmos a figura
 \includegraphics{04-Figuras/Arquitetura-AutoAssociativa}
