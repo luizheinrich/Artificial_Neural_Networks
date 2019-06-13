@@ -4,4 +4,19 @@
 Z.~L. Kov{\'a}cs, {\em Redes neurais artificiais}.
 \newblock Editora Livraria da Fisica, 2002.
 
+\bibitem{fraley2007model}
+C.~Fraley, A.~E. Raftery, {\em et~al.}, ``Model-based methods of
+  classification: using the mclust software in chemometrics,'' {\em Journal of
+  Statistical Software}, vol.~18, no.~6, pp.~1--13, 2007.
+
+\bibitem{haykin2007redes}
+S.~Haykin, {\em Redes neurais: princ{\'\i}pios e pr{\'a}tica}.
+\newblock Bookman Editora, 2007.
+
+\bibitem{Miranda}
+V.~Miranda, A.~Castro, and S.~Lima, ``Diagnosing faults in power transformers
+  with autoassociative neural networks and mean shift,'' {\em IEEE Transactions
+  on Power Delivery - IEEE TRANS POWER DELIVERY}, vol.~27, pp.~1350--1357, 07
+  2012.
+
 \end{thebibliography}

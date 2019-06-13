@@ -1,6 +1,6 @@
 \section{Revisão Bibliográfica} \label{revisaobibliografica}
 
-Redes Neurais Artificiais são técnicas computacionais que apresentam um modelo matemático inspirado na estrutura neural de organismos inteligentes e que adquirem conhecimento através da experiência. A arquitetura base de rede neural estudada neste artigo é a Perceptron de Múltiplas Camadas (do inglês, Multilayer Perceptron, ou apenas MLP) \cite{kovacs2002redes}.
+Redes Neurais Artificiais são técnicas computacionais que apresentam um modelo matemático inspirado na estrutura neural de organismos inteligentes e que adquirem conhecimento através da experiência. A arquitetura base de rede neural estudada neste artigo é a Perceptron de Múltiplas Camadas (do inglês, Multilayer Perceptron, ou apenas MLP) \cite{kovacs2002redes} \cite{haykin2007redes}.
 
 \subsection{Perceptrom de Multiplas Camadas}
 
@@ -24,11 +24,11 @@ A rede é alimentada pela camada de entrada, de maneira que as entradas serão p
 \subsection{Algoritmo Backpropagation}
 
 
-Quando verifica-se a resposta na camada de saída de uma MLP, podemos estimar o grau de acerto da rede. Portanto, há um valor esperado (e conhecido) para a resposta da rede durante a fase de treinamento. Logo, podemos extrair o erro dessa rede. O algoritmo \textit{backpropagation} visa realimentar o erro nas entradas com o objetivo de minimizá-lo ao máximo. Essa característica é chamada de retropropagação do erro.
+Quando verifica-se a resposta na camada de saída de uma MLP, podemos estimar o grau de acerto da rede. Portanto, há um valor esperado (e conhecido) para a resposta da rede durante a fase de treinamento. Logo, podemos extrair o erro dessa rede. O algoritmo \textit{backpropagation} visa realimentar o erro nas entradas com o objetivo de minimizá-lo ao máximo. Essa característica é chamada de retropropagação do erro \cite{kovacs2002redes}.
 
 \subsection{Estrutura Competitiva Auto Associativa}
 
-Redes neurais auto associativas são redes de \textit{feedforward} treinadas para produzir uma aproximação do mapeamento de identidade entre entradas e saídas da rede usando o algoritmo \textit{backpropagation}.
+Redes neurais auto associativas são redes de \textit{feedforward} treinadas para produzir uma aproximação do mapeamento de identidade entre entradas e saídas da rede usando o algoritmo \textit{backpropagation} \cite{Miranda}.
 
 \begin{figure}[H]
 
@@ -49,7 +49,7 @@ O principal recurso de uma rede auto associativa é um gargalo dimensional entre
 
 \section{Base de Dados} \label{baseDados}
 
-A base de dados tratada neste trabalho é referente a 13 parâmetros (características) de três classes de vinho, onde totaliza 178 instâncias de dados coletados. Os parâmetros são resultados de uma análise química das três classes de vinhos, a saber: álcool, ácido málico, cinza, alcalinidade das cinzas, magnésio, fenóis totais, flavinóides, fenóis não-flavonóides, proantocianinas, intensidade de cor, matiz, OD280/OD315 de vinho diluídos e prolina.
+A base de dados tratada neste trabalho é referente a 13 parâmetros (características) de três classes de vinho, onde totaliza 178 instâncias de dados coletados. Os parâmetros são resultados de uma análise química das três classes de vinhos, a saber: álcool, ácido málico, cinza, alcalinidade das cinzas, magnésio, fenóis totais, flavinóides, fenóis não-flavonóides, proantocianinas, intensidade de cor, matiz, OD280/OD315 de vinho diluídos e prolina \cite{fraley2007model}.
 
 \input{05-Tabelas/Base_dados}
 
