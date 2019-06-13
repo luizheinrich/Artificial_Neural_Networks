@@ -118,14 +118,17 @@ TesteClasseSaida3   = ClasseS3;
 % -------------------------------------------------------------------------
 
 
-
-
+Neuronios = 5;
 
 % Criação rede feed-forward backpropagation
-net = newff(Entrada,Saida,5);
+net = newff(Entrada,Saida,Neuronios);
+
+
 
 % DIVISÃO DO BANCO DE DADOS IRIS
 net.divideFcn = 'divideind';
+
+
 
 % PARA O TREINAMENTO - 120 PADRÕES (40 DE CADA CLASSE)
 % Classe 1 = 1 a 30; Classe 2 = 51 a 80; Classe 3 = 101 a 130
@@ -142,36 +145,19 @@ net.divideParam.valInd    = [40:1:49, 111:1:120, 159:1:168];
 net.divideParam.testInd   = [50:1:59, 121:1:130, 169:1:178];
 
 
-% Saída antes do treinamento
-%a = sim(net,Entrada);
-
-% Plotagem antes do Trenamento
-%plot(a);
-%hold
-%plot(Saida);
-
-
-
 % TRENAMENTO DA REDE ======================================================
 [net,tr] = train(net,Entrada,Saida);
-
-% Saída após o treinamento
-%a = sim(net,Entrada);
-
-% Plotagem após o Trenamento
-%plot(a);
-%hold
-%plot(Saida);
 
 
 % VETOR DE TESTE ==========================================================
 % Saída após o treinamento - Vetor de teste
 VTeste1 = sim(net,EntradaVetorTesteClasse1);  % Teste Local Classe 1
-VTeste2 = sim(net,EntradaVetorTesteClasse2);  % Teste Local Classe 1
-VTeste3 = sim(net,EntradaVetorTesteClasse3);  % Teste Local Classe 1
+VTeste2 = sim(net,EntradaVetorTesteClasse2);  % Teste Local Classe 2
+VTeste3 = sim(net,EntradaVetorTesteClasse3);  % Teste Local Classe 3
+
 
 VT = sim(net,EntradaVetorTesteGeral);    % Teste Geral (das 3 classes)
-
+%VT = round(VT);
 
 
 % Plotagem após o Trenamento - Vetor de teste
@@ -190,12 +176,10 @@ Erro  =  VT-SaidaVetorTesteGeral;
 Quadrado = Erro.^2;
 
 % ERRO MÉDIO QUADRÁTICO
-MSE = mean(Quadrado);
+MSE = Quadrado./2;
 
 % Media do MSE
-%perf = mse(net,TesteEntrada2,VT);
-media = mean(MSE);
-
+MSETotal = (sum(Quadrado))./30;
 
 
 % DESEMPENHO DA REDE - VETOR DE TESTE LOCAL (REDE 1) ======================
@@ -207,11 +191,10 @@ ErroTesteClasse1  =  VTeste1-SaidaVetorTesteClasse1;
 QuadradoTesteClasse1 = ErroTesteClasse1.^2;
 
 % ERRO MÉDIO QUADRÁTICO
-MSETesteClasse1 = mean(QuadradoTesteClasse1);
+MSETesteClasse1 = QuadradoTesteClasse1./2;
 
 % Media do MSE
-%perf = mse(net,TesteEntrada2,VT);
-mediaTesteClasse1 = mean(MSETesteClasse1);
+MSETotalTesteClasse1 = (sum(QuadradoTesteClasse1))./10;
 
 % =========================================================================
 % DESEMPENHO DA REDE - VETOR DE TESTE LOCAL (REDE 2) ======================
@@ -223,11 +206,10 @@ ErroTesteClasse2  =  VTeste2-SaidaVetorTesteClasse2;
 QuadradoTesteClasse2 = ErroTesteClasse2.^2;
 
 % ERRO MÉDIO QUADRÁTICO
-MSETesteClasse2 = mean(QuadradoTesteClasse2);
+MSETesteClasse2 = QuadradoTesteClasse2./2;
 
 % Media do MSE
-%perf = mse(net,TesteEntrada2,VT);
-mediaTesteClasse2 = mean(MSETesteClasse2);
+MSETotalTesteClasse2 = (sum(QuadradoTesteClasse2))./10;
 
 % =========================================================================
 % DESEMPENHO DA REDE - VETOR DE TESTE LOCAL (REDE 3) ======================
@@ -239,13 +221,21 @@ ErroTesteClasse3  =  VTeste3-SaidaVetorTesteClasse2;
 QuadradoTesteClasse3 = ErroTesteClasse3.^2;
 
 % ERRO MÉDIO QUADRÁTICO
-MSETesteClasse3 = mean(QuadradoTesteClasse3);
+MSETesteClasse3 = QuadradoTesteClasse3./2;
 
 % Media do MSE
-%perf = mse(net,TesteEntrada2,VT);
-mediaTesteClasse3 = mean(MSETesteClasse3);
+MSETotalTesteClasse3 = (sum(QuadradoTesteClasse3))./10;
 
 % =========================================================================
+
+
+
+
+
+
+
+
+
 
 
 

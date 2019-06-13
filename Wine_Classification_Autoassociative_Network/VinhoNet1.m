@@ -86,13 +86,7 @@ TesteSaidaGeral   = [Saida(:,50:59)';
             SaidaVetorTesteGeral = transpose(TesteSaidaGeral);
 % -------------------------------------------------------------------------
 
-% Definir [1]
-Rede = 1;
 
-for TesteClasse = Rede
-
-    if TesteClasse == 1
-        
         ClasseE1 = Entrada(:,50:59)';
         ClasseS1 = Saida(:,50:59)';
         
@@ -104,11 +98,7 @@ for TesteClasse = Rede
         ClasseE3 = Entrada(:,169:178)';
         ClasseS3 = Saida(:,169:178)';
         
-    end
-    
-end
-
-
+        
 % Vetor de Teste Classe 1 -------------------------------------------------
 % Vetor de Entrada para o Vetor de Teste
 TesteClasseEntrada1 = ClasseE1;
@@ -149,9 +139,10 @@ TesteClasseSaida3   = ClasseS3;
             SaidaVetorTesteClasse3 = transpose(TesteClasseSaida3);
 % -------------------------------------------------------------------------
 
+Neuronios = 15;
 
 % Criação rede feed-forward backpropagation
-net = newff(EntradaA,EntradaA,5);
+net = newff(EntradaA,EntradaA,Neuronios);
 
 % DIVISÃO DO BANCO DE DADOS IRIS
 net.divideFcn = 'divideind';
@@ -171,26 +162,8 @@ net.divideParam.valInd    = 40:1:49;
 net.divideParam.testInd   = 50:1:59;
 
 
-% Saída antes do treinamento
-%a = sim(net,Entrada);
-
-% Plotagem antes do Trenamento
-%plot(a);
-%hold
-%plot(Saida);
-
-
-
 % TRENAMENTO DA REDE ======================================================
 [net,tr] = train(net,EntradaA,EntradaA);
-
-% Saída após o treinamento
-%a = sim(net,Entrada);
-
-% Plotagem após o Trenamento
-%plot(a);
-%hold
-%plot(Saida);
 
 
 % VETOR DE TESTE ==========================================================
@@ -200,13 +173,6 @@ VTeste2 = sim(net,EntradaVetorTesteClasse2);  % Teste Local Classe 1
 VTeste3 = sim(net,EntradaVetorTesteClasse3);  % Teste Local Classe 1
 
 VT = sim(net,EntradaVetorTesteGeral);    % Teste Geral (das 3 classes)
-
-
-
-% Plotagem após o Trenamento - Vetor de teste
-%plot(VT);
-%hold
-%plot(TesteEntradaGeral);
 
 
 % DESEMPENHO DA REDE - VETOR DE TESTE TOTAL ===============================
@@ -219,13 +185,13 @@ Erro  =  VT-EntradaVetorTesteGeral;
 Quadrado = Erro.^2;
 
 % ERRO MÉDIO QUADRÁTICO
-MSE = mean(Quadrado);
+MSE = Quadrado./2;
 
 % Media do MSE
-%perf = mse(net,TesteEntrada2,VT);
-media = mean(MSE);
+MSETotal = (sum(Quadrado))./30;
+MSECL00 = sum(MSETotal);
 
-
+plot(MSETotal);
 
 % DESEMPENHO DA REDE - VETOR DE TESTE LOCAL (REDE 1) ======================
 
@@ -236,11 +202,11 @@ ErroTesteClasse1  =  VTeste1-EntradaVetorTesteClasse1;
 QuadradoTesteClasse1 = ErroTesteClasse1.^2;
 
 % ERRO MÉDIO QUADRÁTICO
-MSETesteClasse1 = mean(QuadradoTesteClasse1);
+MSETesteClasse1 = QuadradoTesteClasse1./2;
 
 % Media do MSE
-%perf = mse(net,TesteEntrada2,VT);
-mediaTesteClasse1 = mean(MSETesteClasse1);
+MSETotalTesteClasse1 = sum(QuadradoTesteClasse1)./10;
+MSECL01 = sum(MSETotalTesteClasse1);
 
 % =========================================================================
 % DESEMPENHO DA REDE - VETOR DE TESTE LOCAL (REDE 2) ======================
@@ -252,11 +218,11 @@ ErroTesteClasse2  =  VTeste2-EntradaVetorTesteClasse2;
 QuadradoTesteClasse2 = ErroTesteClasse2.^2;
 
 % ERRO MÉDIO QUADRÁTICO
-MSETesteClasse2 = mean(QuadradoTesteClasse2);
+MSETesteClasse2 = QuadradoTesteClasse2./2;
 
 % Media do MSE
-%perf = mse(net,TesteEntrada2,VT);
-mediaTesteClasse2 = mean(MSETesteClasse2);
+MSETotalTesteClasse2 = sum(QuadradoTesteClasse2)./10;
+MSECL02 = sum(MSETotalTesteClasse2);
 
 % =========================================================================
 % DESEMPENHO DA REDE - VETOR DE TESTE LOCAL (REDE 3) ======================
@@ -268,11 +234,14 @@ ErroTesteClasse3  =  VTeste3-EntradaVetorTesteClasse3;
 QuadradoTesteClasse3 = ErroTesteClasse3.^2;
 
 % ERRO MÉDIO QUADRÁTICO
-MSETesteClasse3 = mean(QuadradoTesteClasse3);
+MSETesteClasse3 = QuadradoTesteClasse3./2;
 
 % Media do MSE
-%perf = mse(net,TesteEntrada2,VT);
-mediaTesteClasse3 = mean(MSETesteClasse3);
+MSETotalTesteClasse3 = sum(QuadradoTesteClasse3)./10;
+MSECL03 = sum(MSETotalTesteClasse3);
 
 % =========================================================================
+
+
+
 
