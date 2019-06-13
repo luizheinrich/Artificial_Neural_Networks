@@ -28,15 +28,20 @@ Quando verifica-se a resposta na camada de saída de uma MLP, podemos estimar o 
 
 \subsection{Estrutura Competitiva Auto Associativa}
 
-Maecenas ipsum velit, consectetuer eu, lobortis ut, dictum at, dui. In rutrum. Sed ac dolor sit amet purus malesuada congue. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Suspendisse sagittis ultrices augue. Mauris metus. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam posuere lacus quis dolor. Praesent id justo in neque elementum ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. In convallis. Fusce suscipit libero eget elit. Praesent vitae arcu tempor neque lacinia pretium. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus.
+Redes neurais auto associativas são redes de \textit{feedforward} treinadas para produzir uma aproximação do mapeamento de identidade entre entradas e saídas da rede usando o algoritmo \textit{backpropagation}.
 
+\begin{figure}[H]
 
+\centering % para centralizarmos a figura
+\includegraphics{04-Figuras/associativa}
 
-Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere. Nullam lectus justo, vulputate eget, mollis sed, tempor sed, magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam neque. Curabitur ligula sapien, pulvinar a, vestibulum quis, facilisis vel, sapien. Nullam eget nisl. Donec vitae arcu.
+\caption{Arquitetura de uma rede auto associativa}
 
-Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. Nunc tincidunt ante vitae massa. Duis ante orci, molestie vitae, vehicula venenatis, tincidunt ac, pede. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Etiam commodo dui eget wisi. Donec iaculis gravida nulla. Donec quis nibh at felis congue commodo. Etiam bibendum elit eget erat.
+\label{figura:associativa}
 
-Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi. Pellentesque ipsum. Nulla non arcu lacinia neque faucibus fringilla. Nulla non lectus sed nisl molestie malesuada. Proin in tellus sit amet nibh dignissim sagittis. Vivamus luctus egestas leo. Maecenas sollicitudin. Nullam rhoncus aliquam metus. Etiam egestas wisi a erat.
+\end{figure}
+
+O principal recurso de uma rede auto associativa é um gargalo dimensional entre entrada e saída (uma vez que as camadas de entrada e saída são as mesmas e o numero de neurônio na camada intermediária é inferior aos da entrada/saída). A compactação de informações pelo gargalo resulta na aquisição de um modelo de correlação dos dados de entrada, útil para executar uma variedade de tarefas de triagem de dados.
 
 
 %=================================================================================================
@@ -44,9 +49,11 @@ Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed ve
 
 \section{Base de Dados} \label{baseDados}
 
-A base de dados tratada neste trabalho é referente a 13 parâmetros (características) de três classes de vinho, onde totaliza 178 instâncias de dados coletados.
+A base de dados tratada neste trabalho é referente a 13 parâmetros (características) de três classes de vinho, onde totaliza 178 instâncias de dados coletados. Os parâmetros são resultados de uma análise química das três classes de vinhos, a saber: álcool, ácido málico, cinza, alcalinidade das cinzas, magnésio, fenóis totais, flavinóides, fenóis não-flavonóides, proantocianinas, intensidade de cor, matiz, OD280/OD315 de vinho diluídos e prolina.
 
-Das 178 instâncias 59 pertencem à classe 1, 71 pertencem à classe 2 e 48 à classe 3.
+\input{05-Tabelas/Base_dados}
+
+Das 178 instâncias 59 pertencem à classe 1, 71 pertencem à classe 2 e 48 à classe 3, como mostra a tabela \ref{tabela:baseDados}.
 
 
 
@@ -78,12 +85,13 @@ A tabela \ref{tabela:MLP_MSE} mostra o desempenho de cada topologia de rede MPL.
 
 \end{figure}
 
-Após a escolha da topologia de rede MLP, 
 
+A fig. \ref{figura:arquiteturaMPL} mostra a arquitetura da rede MPL. As 13 entradas alimentam os 5 neurônios na camada intermediária e, por conseguinte, a saída expressará um valor, que será alocado nos intervalos definidos na Seção \ref{baseDados}.
+
+Após a escolha da topologia da rede MLP, as entradas foram normalizadas no intervalo de 0 a 1.
 
 
 \subsection{Parâmetros de Classificação}
-
 
 
 A resposta da rede MLP foi definida em intervalos de abrangência. De 0,5 a 1,5, consideramos como pertencentes à classe 1. Os valores entre 1,5 a 2,5, são os da classe 2. Para a classe 3, foi definido o intervalo de 2,5 a 3,5.
