@@ -24,3 +24,19 @@ Teste      -> 10	net.divideParam.testInd   = 121:1:130;
 Treino     -> 28	net.divideParam.trainInd  = 131:1:158;
 Validação  -> 10	net.divideParam.valInd    = 159:1:168;
 Teste      -> 10	net.divideParam.testInd   = 169:1:178;
+
+
+
+0.000000001
+20
+3
+
+0.000831554915398624
+
+
+5 -> 4h
+4 -> 30min
+3 -> 2min
+2 -> 30seg
+
+

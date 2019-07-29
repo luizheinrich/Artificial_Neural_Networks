@@ -142,7 +142,7 @@ for i = 1:3
     B1 = DATA(14,1:59);
     
     
-        NeuronioNet = 15;
+        NeuronioNet = 5;
         Treino    = 1:1:39;
         Validacao = 40:1:49;
         Teste     = 50:1:59;
@@ -165,7 +165,7 @@ for i = 1:3
 
     B1 = DATA(14,60:130);
         
-        NeuronioNet = 20;
+        NeuronioNet = 5;
         Treino    = 60:1:110;
         Validacao = 111:1:120;
         Teste     = 121:1:130;
@@ -193,7 +193,7 @@ for i = 1:3
 
     B1 = DATAC3(14,:);
         
-        NeuronioNet = 13;
+        NeuronioNet = 5;
         Treino    = 1:1:28;
         Validacao = 29:1:38;
         Teste     = 39:1:48;
@@ -207,7 +207,7 @@ for i = 1:3
     SaidaB = B1;
     
 % Criação rede feed-forward backpropagation - Rede 1
-net = newff(EntradaA,EntradaA,NeuronioNet);
+net = newff(EntradaA,EntradaA,NeuronioNet,{'purelin','purelin'});
 
 % DIVISÃO DO BANCO DE DADOS
 net.divideFcn = 'divideind';
@@ -317,7 +317,7 @@ rede1 = transpose(MSETotal.Net{1, 1});
 rede2 = transpose(MSETotal.Net{1, 2});
 rede3 = transpose(MSETotal.Net{1, 3});
 
-%plot(MSETotal.Net{1, 1})
+plot(MSETotal.Net{1, 1})
 %plot(MSETotal.Net{1, 2})
 %plot(MSETotal.Net{1, 3})
 
